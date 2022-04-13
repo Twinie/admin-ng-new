@@ -12284,23 +12284,8 @@ html[dir=ltr] body .p-l-0 {
   #main-wrapper[data-layout=vertical][data-sidebar-position=fixed][data-sidebartype=full] .topbar .top-navbar .navbar-collapse, #main-wrapper[data-layout=vertical][data-sidebar-position=fixed][data-sidebartype=overlay] .topbar .top-navbar .navbar-collapse {
     margin-left: 250px;
   }
-  #main-wrapper[data-layout=vertical][data-sidebar-position=fixed][data-sidebartype=mini-sidebar] .topbar .top-navbar .navbar-collapse {
-    margin-left: 65px;
-  }
   #main-wrapper[data-layout=vertical][data-sidebar-position=fixed][data-sidebartype=iconbar] .topbar .top-navbar .navbar-collapse {
     margin-left: 180px;
-  }
-  #main-wrapper[data-layout=vertical][data-sidebartype=mini-sidebar] .topbar .top-navbar .navbar-header {
-    width: 65px;
-  }
-  #main-wrapper[data-layout=vertical][data-sidebartype=mini-sidebar] .topbar .top-navbar .navbar-header .logo-text {
-    display: none;
-  }
-  #main-wrapper[data-layout=vertical][data-sidebartype=mini-sidebar] .topbar .top-navbar .navbar-header.expand-logo {
-    width: 250px;
-  }
-  #main-wrapper[data-layout=vertical][data-sidebartype=mini-sidebar] .topbar .top-navbar .navbar-header.expand-logo .logo-text {
-    display: block;
   }
   #main-wrapper[data-layout=vertical][data-sidebar-position=fixed][data-sidebartype=mini-sidebar] .topbar .top-navbar .navbar-collapse {
     margin-left: 65px;
@@ -12333,7 +12318,7 @@ html[dir=ltr] body .p-l-0 {
             justify-content: flex-start;
   }
 }
-@media (max-width: 766px) {
+@media (max-width: 1170px) {
   #main-wrapper {
     /*Header position*/
   }
@@ -13691,21 +13676,53 @@ File: scss
   }
 }
 .docs#main-wrapper[data-layout=vertical] .left-sidebar[data-sidebarbg=skin6] {
-  width: 250px;
   -webkit-box-shadow: none;
           box-shadow: none;
   border-right: 1px solid #e9ecef;
   background: #fff;
 }
+.docs#main-wrapper[data-layout=vertical] .left-sidebar[data-sidebarbg=skin6] .sidebar-nav > ul {
+  padding: 0 20px;
+}
+.docs#main-wrapper[data-layout=vertical] .left-sidebar[data-sidebarbg=skin6] .sidebar-nav .hide-menu {
+  display: block;
+}
 .docs#main-wrapper[data-layout=vertical] .left-sidebar[data-sidebarbg=skin6] .sidebar-nav .nav-small-cap {
-  font-size: 15px;
+  font-size: 13px;
+  font-weight: 500;
   color: #bcc3d3;
+  opacity: 0.9;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  padding: 12px 30px;
+}
+.docs#main-wrapper[data-layout=vertical] .left-sidebar[data-sidebarbg=skin6] .sidebar-nav ul .sidebar-item {
+  width: 210px;
+}
+.docs#main-wrapper[data-layout=vertical] .left-sidebar[data-sidebarbg=skin6] .sidebar-nav ul .sidebar-item.active {
+  opacity: 1;
+  background: black;
+  border-radius: 6px;
+}
+.docs#main-wrapper[data-layout=vertical] .left-sidebar[data-sidebarbg=skin6] .sidebar-nav ul .sidebar-item.active .hide-menu {
+  color: white;
 }
 .docs#main-wrapper[data-layout=vertical] .left-sidebar[data-sidebarbg=skin6] .sidebar-nav ul .sidebar-item .sidebar-link {
   text-decoration: none;
+  color: #607d8b;
+  padding: 12px 30px;
   font-size: 15px;
   font-weight: 400;
-  margin-left: 15px;
+  opacity: 0.9;
+}
+.docs#main-wrapper[data-layout=vertical] .left-sidebar[data-sidebarbg=skin6] .sidebar-nav ul .sidebar-item .sidebar-link.active {
+  opacity: 1;
+  background: black;
+  border-radius: 6px;
+}
+.docs#main-wrapper[data-layout=vertical] .left-sidebar[data-sidebarbg=skin6] .sidebar-nav ul .sidebar-item .sidebar-link.active .hide-menu {
+  color: white;
 }
 .docs .page-wrapper {
   background: white;
@@ -13717,8 +13734,14 @@ File: scss
 .docs .page-wrapper pre, .docs .page-wrapper code {
   margin-bottom: 0;
   border-radius: 10px;
-  padding: 0 15px;
   font-size: 15px;
+}
+.docs .page-wrapper code {
+  padding: 0;
+}
+.docs .page-wrapper .card-subtitle {
+  color: #a1aab2;
+  font-weight: 300;
 }
 .docs .page-wrapper .card {
   border: 1px solid #ecf0f2;
@@ -13728,12 +13751,6 @@ File: scss
 .docs .page-wrapper .card .card-body {
   padding: 30px;
 }
-.docs .page-wrapper .card .card-body ul {
-  list-style: none !important;
-}
-.docs .page-wrapper .card .card-body ul li {
-  list-style-type: none !important;
-}
 .docs .page-wrapper .card .card-body ul li a {
   text-decoration: none !important;
 }
@@ -13741,33 +13758,52 @@ File: scss
   -webkit-box-shadow: none;
           box-shadow: none;
 }
-.docs .topbar .top-navbar .navbar-header .navbar-brand {
+.docs .topbar .top-navbar .navbar-header {
   border-right: 1px solid #e9ecef;
+}
+.docs .topbar .top-navbar .navbar-header .navbar-brand {
+  padding: 0 30px;
   background: #fff;
 }
 .docs .topbar .top-navbar .navbar-header .navbar-brand a {
   text-decoration: none;
 }
-.docs .footer {
-  background: #fff;
-  border-top: 1px solid #e9ecef;
-  padding: 17px 15px;
-}
 
-@media (min-width: 360px) {
-  .docs .left-sidebar {
-    border-right: none;
-  }
-  .docs .topbar .top-navbar .navbar-header .navbar-brand {
-    border-right: none;
+@media (min-width: 160px) {
+  .docs .topbar .top-navbar .navbar-header {
+    border: 1px solid #e9ecef;
   }
 }
 @media (min-width: 768px) {
-  .docs .left-sidebar {
-    border-right: 1px solid #e9ecef;
-  }
-  .docs .topbar .top-navbar .navbar-header .navbar-brand {
+  .docs#main-wrapper[data-layout=vertical][data-sidebartype=mini-sidebar] .page-wrapper {
     margin-left: 0;
+  }
+  .docs#main-wrapper[data-layout=vertical][data-sidebartype=mini-sidebar] .left-sidebar[data-sidebarbg=skin6] {
+    width: 250px;
+  }
+  .docs .topbar .top-navbar .navbar-header {
     border-right: 1px solid #e9ecef;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .docs .topbar .top-navbar .navbar-header .nav-toggler {
+    text-decoration: none;
+  }
+}
+@media (min-width: 1170px) {
+  .docs .topbar .top-navbar .navbar-header {
+    border-bottom: none;
+  }
+  .docs .topbar .top-navbar .navbar-header .nav-toggler {
+    text-decoration: none;
+    display: none;
   }
 }

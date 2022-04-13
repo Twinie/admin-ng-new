@@ -189,31 +189,38 @@ $left-part-width:260px;
                 margin-left: $sidebar-width-full;
             }
         }
-        &[data-sidebar-position="fixed"][data-sidebartype="mini-sidebar"] {
-            .topbar .top-navbar .navbar-collapse {
-                margin-left: $sidebar-width-mini;
-            }
-        }
+        // &[data-sidebar-position="fixed"][data-sidebartype="mini-sidebar"] {
+        //     .topbar .top-navbar .navbar-collapse {
+        //         margin-left: $sidebar-width-mini;
+        //     }
+        // }
+        // commented out by twinkle
+
+
+
         &[data-sidebar-position="fixed"][data-sidebartype="iconbar"] {
             .topbar .top-navbar .navbar-collapse {
                 margin-left: $sidebar-width-iconbar;
             }
         }
         /*Vertical with mini-sidebar*/
-        &[data-sidebartype="mini-sidebar"] {
-            .topbar .top-navbar .navbar-header {
-                width: $sidebar-width-mini;
-                .logo-text {
-                    display: none;
-                }
-                &.expand-logo {
-                    width: $sidebar-width-full;
-                    .logo-text {
-                        display: block;
-                    }
-                }
-            }
-        }
+        // &[data-sidebartype="mini-sidebar"] {
+        //     .topbar .top-navbar .navbar-header {
+        //         width: $sidebar-width-mini;
+        //         .logo-text {
+        //             display: none;
+        //         }
+        //         &.expand-logo {
+        //             width: $sidebar-width-full;
+        //             .logo-text {
+        //                 display: block;
+        //             }
+        //         }
+        //     }
+        // }
+        // commented out by twinkle
+
+
         /*Fixed sidebar with minisidebar*/
         &[data-sidebar-position="fixed"][data-sidebartype="mini-sidebar"] {
             .topbar .top-navbar .navbar-collapse {
@@ -252,7 +259,7 @@ $left-part-width:260px;
     }
 }
 
-@media(max-width:766px) {
+@media(max-width:1170px) { //changed the max-width from medium to 1170px by Twinkle
     #main-wrapper {
         &[data-sidebartype="mini-sidebar"] {
             .left-sidebar {

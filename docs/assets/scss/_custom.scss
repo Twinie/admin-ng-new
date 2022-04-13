@@ -4,23 +4,53 @@
 .docs {
   &#main-wrapper[data-layout=vertical]{
     .left-sidebar[data-sidebarbg=skin6]{
-      width: 250px;
       box-shadow: none;
       border-right: 1px solid #e9ecef;
       background: #fff;
+      // padding: 0 20px;
       .sidebar-nav {
+        &>ul{
+          padding: 0 20px;
+        }
+       
+        .hide-menu{
+          display: block;
+        }
         .nav-small-cap{
-          font-size: 15px;
+          font-size: 13px;
+          font-weight: 500;
           color: #bcc3d3;
-          ;
+          opacity: 0.9;
+          justify-content: start;
+          padding: 12px 30px;
         }
         ul{
           .sidebar-item{
+            width: 210px;
+            &.active{
+              opacity: 1;
+              background: black;
+              border-radius: 6px;
+           
+              .hide-menu {
+                  color: white;
+              }
+            }
             .sidebar-link{
               text-decoration: none;
+              color: #607d8b;
+              padding: 12px 30px;
               font-size: 15px;
               font-weight: 400;
-              margin-left: 15px;
+              opacity: 0.9;
+              &.active{
+                opacity: 1;
+                background: black;
+                border-radius: 6px;
+                .hide-menu {
+                    color: white;
+                }
+              }
             }
           }
         }
@@ -38,8 +68,14 @@
     pre, code {
       margin-bottom: 0;
       border-radius: 10px;
-      padding: 0 15px;
       font-size: 15px;
+  }
+  code{
+    padding: 0;
+  }
+  .card-subtitle{
+    color: $gray-500;
+    font-weight: 300;
   }
   .card {
 		border: 1px solid #ecf0f2;
@@ -48,9 +84,7 @@
     .card-body {
     padding: 30px;
      ul{
-      list-style: none !important;
        li{
-        list-style-type: none !important;
          a{
           text-decoration: none !important;
           }
@@ -63,34 +97,30 @@
     box-shadow: none;
     .top-navbar{
        .navbar-header{
+         border-right: 1px solid #e9ecef;
          .navbar-brand{
+           padding: 0 30px;
           a{
             text-decoration: none;
           }
-          border-right: 1px solid #e9ecef;
           background: #fff;
         }
       }
     }
   }
- .footer{
-  background: #fff;
-  border-top: 1px solid #e9ecef;
-  padding: 17px 15px
- }
+ 
 }
 
-@media(min-width:360px){
+@media(min-width:160px){
   .docs{
-    .left-sidebar{
-      border-right: none;
-    }
+    // .left-sidebar{
+    //   border-right: none;
+    // }
     .topbar{
       .top-navbar{
         .navbar-header{
-          .navbar-brand{ 
-            border-right: none;
-          }
+          border:1px solid #e9ecef;
+         
         }
       }
     }
@@ -99,15 +129,29 @@
 
 @media(min-width:768px){
   .docs{
-    .left-sidebar{
-      border-right: 1px solid #e9ecef;
+    &#main-wrapper[data-layout=vertical][data-sidebartype=mini-sidebar] {
+      .page-wrapper {
+        margin-left: 0;
+      }
+      .left-sidebar[data-sidebarbg=skin6]{
+        // display: none;
+        width: 250px;
+      
+      }
     }
     .topbar{
       .top-navbar{
         .navbar-header{
+          border-right: 1px solid #e9ecef;
+          display: flex;
+          align-items: center;
+          width: 100%;
+          justify-content: space-between;
+          .nav-toggler{
+            text-decoration: none;
+          }
           .navbar-brand{
-            margin-left: 0;
-            border-right: 1px solid #e9ecef;
+            // display: none;
           }
         }
       }
@@ -115,16 +159,22 @@
   }
 }
 
-// @media(min-width:1170px){
-//   .docs{
-//     .topbar{
-//       .top-navbar{
-//         .navbar-header{
-//           .navbar-brand{
-//             margin-left: 10px;
-//           }
-//         }
-//       }
-//     }
-//   }
-// }
+@media(min-width:1170px){
+  .docs{
+    .topbar{
+      .top-navbar{
+        .navbar-header{
+          border-bottom: none;
+           .nav-toggler{
+             text-decoration: none;
+             display: none;
+           }
+
+          // .navbar-brand{
+          //   border:none;
+          // }
+        }
+      }
+    }
+  }
+}

@@ -19,7 +19,6 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" type="text/css" href="highlights/atom-one-dark.min.css" />
     <link href="assets/css/style.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="highlights/highlight.min.css">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -61,11 +60,10 @@
         <!-- Topbar header - style you can find in pages.scss -->
         <!-- ============================================================== -->
         <header class="topbar" data-navbarbg="skin6">
-            <nav class="navbar top-navbar navbar-expand-md navbar-dark">
+            <nav class="navbar top-navbar navbar-expand-md navbar-light">
                 <div class="navbar-header" data-logobg="skin6">
                     <!-- This is for the sidebar toggle which is visible on mobile only -->
-                    <a class="nav-toggler waves-effect waves-light d-block d-md-none" href="javascript:void(0)"><i
-                            class="ti-menu ti-close"></i></a>
+
                     <!-- ============================================================== -->
                     <!-- Logo -->
                     <!-- ============================================================== -->
@@ -88,24 +86,31 @@
                             </span>
                         </a>
                     </div>
+
+
+                    <a class="nav-toggler waves-effect waves-light" href="javascript:void(0)"><i
+                            class="ti-menu ti-close"></i></a>
+                    <!--removed d-md-none d-block -->
+
+
+
                     <!-- ============================================================== -->
                     <!-- End Logo -->
                     <!-- ============================================================== -->
                     <!-- ============================================================== -->
                     <!-- Toggle which is visible on mobile only -->
                     <!-- ============================================================== -->
-                    <a class="topbartoggler d-block d-md-none waves-effect waves-light" href="javascript:void(0)"
+
+
+                    <!-- <a class="topbartoggler d-block d-md-none waves-effect waves-light" href="javascript:void(0)"
                         data-toggle="collapse" data-target="#navbarSupportedContent"
                         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><i
-                            class="ti-more"></i></a>
+                            class="ti-more"></i></a> -->
                 </div>
                 <!-- ============================================================== -->
                 <!-- End Logo -->
                 <!-- ============================================================== -->
                 <div class="navbar-collapse collapse" id="navbarSupportedContent">
-                    <!-- ============================================================== -->
-                    <!-- toggle and nav items -->
-                    <!-- ============================================================== -->
 
                 </div>
             </nav>
@@ -273,7 +278,8 @@
 
                                 <h5 class="fw-normal text-muted lh-base">
                                     AdminPro Angular Dashboard is built with
-                                    <a href="https://getbootstrap.com/">Angular 13+ CLI</a> .
+                                    <a href="https://getbootstrap.com/" class="text-decoration-none">Angular 13+ CLI</a>
+                                    .
                                 </h5>
 
                                 <h5 class="fw-normal text-muted lh-base mt-3">
@@ -293,7 +299,8 @@
                                 <h5 class="fw-normal text-muted lh-base mt-3 mb-0">
                                     If you dont find something while you are following the
                                     documentation, please create a support ticket from
-                                    <a href="https://www.wrappixel.com/">wrappixel.com</a> and our
+                                    <a href="https://www.wrappixel.com/" class="text-decoration-none">wrappixel.com</a>
+                                    and our
                                     tech. team will help you out.
                                 </h5>
                             </div>
@@ -301,9 +308,9 @@
 
 
                         <h4>Dependencies</h4>
-                        <div class="card mt-3">
+                        <div class="card">
                             <div class="card-body">
-                                <ul class="list-inline">
+                                <ul class="mb-0">
 
                                     <li class="fw-normal"><a href="https://angular.io/" target="_blank">Angular 13+</a>
                                     </li>
@@ -530,13 +537,7 @@
         <!-- ============================================================== -->
         <!-- End Container fluid  -->
         <!-- ============================================================== -->
-        <!-- ============================================================== -->
-        <!-- footer -->
-        <!-- ============================================================== -->
 
-        <!-- ============================================================== -->
-        <!-- End footer -->
-        <!-- ============================================================== -->
     </div>
     </div>
     <!-- ============================================================== -->
