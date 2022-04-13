@@ -118,7 +118,7 @@
             <!-- Sidebar scroll-->
             <div class="scroll-sidebar">
                 <!-- Sidebar navigation-->
-                <nav class="sidebar-nav">
+                <nav class="sidebar-nav d-block text-truncate">
                     <ul id="sidebarnav">
                         <li class="nav-small-cap"><span class="hide-menu">Getting Started</span></li>
 
@@ -158,19 +158,19 @@
                         </li>
                         <li class="sidebar-item"> <a class="sidebar-link sidebar-link"
                                 href="docs-change-global-skins.html" aria-expanded="false">
-                                <span class="hide-menu">Change Global Skin Color</span></a>
+                                <span class="hide-menu">Change Skin Color</span></a>
                         </li>
                         <li class="sidebar-item"> <a class="sidebar-link sidebar-link"
                                 href="docs-change-logo-color.html" aria-expanded="false">
-                                <span class="hide-menu">Change Logo Background</span></a>
+                                <span class="hide-menu">Change Logo</span></a>
                         </li>
                         <li class="sidebar-item"> <a class="sidebar-link sidebar-link"
                                 href="docs-change-header-color.html" aria-expanded="false">
-                                <span class="hide-menu">Change Header Background</span></a>
+                                <span class="hide-menu">Change Header</span></a>
                         </li>
                         <li class="sidebar-item"> <a class="sidebar-link sidebar-link"
                                 href="docs-change-sidebar-color.html" aria-expanded="false">
-                                <span class="hide-menu">Change Sidebar Background</span></a>
+                                <span class="hide-menu">Change Sidebar</span></a>
                         </li>
                         <li class="list-divider"></li>
                         <li class="nav-small-cap"><span class="hide-menu">UI Components</span></li>
@@ -261,7 +261,7 @@
                 <div class="row">
                     <div class="col-md-12">
 
-                        <h4 class="card-title mb-3">Ngx-charts Component</h4>
+                        <h4 class="card-title">Ngx-charts Component</h4>
 
                         <h5 class="card-subtitle">ngx-charts is unique because we don't merely wrap d3, nor any
                             other chart engine for that matter</h5>
@@ -269,8 +269,8 @@
                         <div class="card mt-4">
                             <div class="card-body">
                                 <h4 class="card-title">NPM Package</h4>
-                                <h5 class="card-subtitle">For install the Ngx-charts using NPM package</h5>
-                                <hr>
+                                <h5 class="card-subtitle mb-4">For install the Ngx-charts using NPM package</h5>
+
                                 <h5 class="card-title text-info mb-0">@swimlane/ngx-charts</h5>
                                 <pre class="highlight content">
                                     <code class="shadow-sm px-4">
@@ -286,9 +286,8 @@ npm i @swimlane/ngx-charts --save
                                     into your <span class="font-weight-medium">ComponentsModule</span>
                                     class. <span class="font-weight-medium">components.module.ts</span>
                                     would look like this</h5>
-                                <hr>
-                                <h5 class="card-title text-info mb-0">Code:</h5>
-                                <pre class="highlight typescript">
+
+                                <pre class="typescript">
                                     <code class="shadow-sm px-4">
 import {NgModule} from '@angular/core'; 
 import { NgxChartsModule } from '@swimlane/ngx-charts';
@@ -310,9 +309,8 @@ export class ComponentsModule { }
                                 <h5 class="card-subtitle"><span
                                         class="font-weight-medium">/ngx-chart.component.html</span>
                                     would look like this</h5>
-                                <hr>
-                                <h5 class="card-title text-info mb-0">Code:</h5>
-                                <pre class="highlight html">
+
+                                <pre class="html">
                                     <code class="shadow-sm px-4">
 &lt;ngx-charts-bar-vertical class=&quot;chart-container&quot; [scheme]=&quot;colorScheme&quot; [schemeType]=&quot;schemeType&quot; [results]=&quot;single&quot; [gradient]=&quot;gradient&quot;
     [xAxis]=&quot;showXAxis&quot; [yAxis]=&quot;showYAxis&quot; [legend]=&quot;showLegend&quot; [showXAxisLabel]=&quot;showXAxisLabel&quot; [showYAxisLabel]=&quot;showYAxisLabel&quot;

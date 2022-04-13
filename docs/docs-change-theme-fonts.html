@@ -118,7 +118,7 @@
       <!-- Sidebar scroll-->
       <div class="scroll-sidebar">
         <!-- Sidebar navigation-->
-        <nav class="sidebar-nav">
+        <nav class="sidebar-nav d-block text-truncate">
           <ul id="sidebarnav">
             <li class="nav-small-cap"><span class="hide-menu">Getting Started</span></li>
 
@@ -157,19 +157,19 @@
             </li>
             <li class="sidebar-item"> <a class="sidebar-link sidebar-link" href="docs-change-global-skins.html"
                 aria-expanded="false">
-                <span class="hide-menu">Change Global Skin Color</span></a>
+                <span class="hide-menu">Change Skin Color</span></a>
             </li>
             <li class="sidebar-item"> <a class="sidebar-link sidebar-link" href="docs-change-logo-color.html"
                 aria-expanded="false">
-                <span class="hide-menu">Change Logo Background</span></a>
+                <span class="hide-menu">Change Logo</span></a>
             </li>
             <li class="sidebar-item"> <a class="sidebar-link sidebar-link" href="docs-change-header-color.html"
                 aria-expanded="false">
-                <span class="hide-menu">Change Header Background</span></a>
+                <span class="hide-menu">Change Header</span></a>
             </li>
             <li class="sidebar-item"> <a class="sidebar-link sidebar-link" href="docs-change-sidebar-color.html"
                 aria-expanded="false">
-                <span class="hide-menu">Change Sidebar Background</span></a>
+                <span class="hide-menu">Change Sidebar</span></a>
             </li>
             <li class="list-divider"></li>
             <li class="nav-small-cap"><span class="hide-menu">UI Components</span></li>
@@ -262,7 +262,7 @@
             <h4 class="">
               How to Change Global Fonts ?
             </h4>
-            <h5 class="card-subtitle text-muted fw-normal font-16 lh-base">
+            <h5 class="card-subtitle">
               we have used google fonts in our template. so, when you
               change the fonts of the theme go tho the scss folder and
               open
@@ -274,10 +274,10 @@
               <div class="card-body">
                 <div class="bg-white">
                   <h5>Note:</h5>
-                  <div class="font-16">
+                  <div class="font-16 card-subtitle">
                     First run the demo you have and if you don't know how to
                     run then follow this link
-                    <a href="./docs-start.html" class="">project</a>
+                    <a href="./docs-start.html" class="text-decoration-none">project</a>
                   </div>
                   <pre class="css mb-0">
                     <code class="shadow-sm px-4">
@@ -285,12 +285,12 @@ ng serve -o
                     </code>
                   </pre>
                 </div>
-                <h4 class="card-title d-flex align-items-center">
-                  1) src <i class="fas fa-angle-right mx-1"></i> assets
-                  <i class="fas fa-angle-right mx-1"></i> scss
-                  <i class="fas fa-angle-right mx-1"></i>
-                  variable.scss
-                </h4>
+                <h5 class="card-title d-flex align-items-center">
+                  <span class="font-16 me-1">1) </span>Go to the
+                  <span class="text-info font-weight-medium"> src <i class="fas fa-angle-right mr-1"></i> assets <i
+                      class="fas fa-angle-right mr-1"></i> scss <i class="fas fa-angle-right mr-1"></i> variable.scss
+                  </span>.
+                </h5>
                 <pre class="css mb-0">
                                     <code class="shadow-sm px-4">
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700');
@@ -301,10 +301,10 @@ ng serve -o
 $font-family-sans-serif: 'Nunito Sans',sans-serif !default;
                                     </code>
                                 </pre>
-                <h4 class="card-title d-flex align-items-center">
+                <h5 class="card-title d-flex align-items-center">
                   2) src <i class="fas fa-angle-right mx-1"></i>
                   index.html
-                </h4>
+                </h5>
                 <pre class="css mb-0">
                           <code class="shadow-sm px-4">
 &lt;link
@@ -315,11 +315,11 @@ rel=&quot;stylesheet&quot;
                           </pre>
 
 
-                <div class="fw-normal font-16">
+                <div class="fw-normal text-muted font-16">
 
                   Check in the browser after saving the variable.scss and index.html[src].
                 </div>
-                <div class="fw-normal font-16">
+                <div class="fw-normal text-muted font-16">
                   If you want to change fonts of the theme then
                   <span class="text-info font-medium">put the URL</span> of
                   your fonts and

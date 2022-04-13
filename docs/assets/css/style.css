@@ -13710,6 +13710,7 @@ File: scss
 }
 .docs#main-wrapper[data-layout=vertical] .left-sidebar[data-sidebarbg=skin6] .sidebar-nav ul .sidebar-item .sidebar-link {
   text-decoration: none;
+  margin-bottom: 8px;
   color: #607d8b;
   padding: 12px 30px;
   font-size: 15px;
@@ -13742,6 +13743,7 @@ File: scss
 .docs .page-wrapper .card-subtitle {
   color: #a1aab2;
   font-weight: 300;
+  line-height: 1.5;
 }
 .docs .page-wrapper .card {
   border: 1px solid #ecf0f2;
@@ -13765,7 +13767,13 @@ File: scss
   padding: 0 30px;
   background: #fff;
 }
-.docs .topbar .top-navbar .navbar-header .navbar-brand a {
+.docs .topbar .top-navbar .navbar-header .navbar-brand > a {
+  text-decoration: none;
+}
+.docs .topbar .top-navbar .navbar-header .nav-toggler {
+  text-decoration: none;
+}
+.docs tbody td a {
   text-decoration: none;
 }
 
