@@ -6,6 +6,9 @@
     text-decoration: none;
   }
   &#main-wrapper[data-layout=vertical]{
+    .container-fluid{
+      min-height: calc(100vh - 120px);
+    }
     .left-sidebar[data-sidebarbg=skin6]{
       box-shadow: none;
       border-right: 1px solid #e9ecef;
