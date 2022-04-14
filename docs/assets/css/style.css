@@ -15,7 +15,6 @@ File: scss
 /*transitions*/
 /*Dark transparent bg*/
 @import 'icons/font-awesome/css/fontawesome-all.css';
-@import 'icons/material-design-iconic-font/css/materialdesignicons.min.css';
 @import 'icons/themify-icons/themify-icons.css';
 .topbar .mega-dropdown .dropdown-menu, .search-box .app-search .form-control {
   border-radius: 0px;
@@ -13675,6 +13674,9 @@ File: scss
     display: block !important;
   }
 }
+.docs a {
+  text-decoration: none;
+}
 .docs#main-wrapper[data-layout=vertical] .left-sidebar[data-sidebarbg=skin6] {
   -webkit-box-shadow: none;
           box-shadow: none;
@@ -13700,12 +13702,21 @@ File: scss
 .docs#main-wrapper[data-layout=vertical] .left-sidebar[data-sidebarbg=skin6] .sidebar-nav ul .sidebar-item {
   width: 210px;
 }
-.docs#main-wrapper[data-layout=vertical] .left-sidebar[data-sidebarbg=skin6] .sidebar-nav ul .sidebar-item.active {
+.docs#main-wrapper[data-layout=vertical] .left-sidebar[data-sidebarbg=skin6] .sidebar-nav ul .sidebar-item.selected {
   opacity: 1;
+}
+.docs#main-wrapper[data-layout=vertical] .left-sidebar[data-sidebarbg=skin6] .sidebar-nav ul .sidebar-item.selected > .sidebar-link.active:not(.has-arrow) {
   background: black;
   border-radius: 6px;
 }
-.docs#main-wrapper[data-layout=vertical] .left-sidebar[data-sidebarbg=skin6] .sidebar-nav ul .sidebar-item.active .hide-menu {
+.docs#main-wrapper[data-layout=vertical] .left-sidebar[data-sidebarbg=skin6] .sidebar-nav ul .sidebar-item.selected > .sidebar-link.active:not(.has-arrow) .hide-menu {
+  color: white;
+}
+.docs#main-wrapper[data-layout=vertical] .left-sidebar[data-sidebarbg=skin6] .sidebar-nav ul .sidebar-item.selected .first-level .sidebar-link.active {
+  background: black;
+  border-radius: 6px;
+}
+.docs#main-wrapper[data-layout=vertical] .left-sidebar[data-sidebarbg=skin6] .sidebar-nav ul .sidebar-item.selected .first-level .sidebar-link.active .hide-menu {
   color: white;
 }
 .docs#main-wrapper[data-layout=vertical] .left-sidebar[data-sidebarbg=skin6] .sidebar-nav ul .sidebar-item .sidebar-link {
@@ -13717,13 +13728,12 @@ File: scss
   font-weight: 400;
   opacity: 0.9;
 }
-.docs#main-wrapper[data-layout=vertical] .left-sidebar[data-sidebarbg=skin6] .sidebar-nav ul .sidebar-item .sidebar-link.active {
-  opacity: 1;
-  background: black;
-  border-radius: 6px;
-}
-.docs#main-wrapper[data-layout=vertical] .left-sidebar[data-sidebarbg=skin6] .sidebar-nav ul .sidebar-item .sidebar-link.active .hide-menu {
-  color: white;
+.docs#main-wrapper[data-layout=vertical] .footer {
+  font-size: 16px;
+  color: #607d8b;
+  background: #fff;
+  border-top: 1px solid #e9ecef;
+  padding: 17px 15px;
 }
 .docs .page-wrapper {
   background: white;
@@ -13753,9 +13763,6 @@ File: scss
 .docs .page-wrapper .card .card-body {
   padding: 30px;
 }
-.docs .page-wrapper .card .card-body ul li a {
-  text-decoration: none !important;
-}
 .docs .topbar {
   -webkit-box-shadow: none;
           box-shadow: none;
@@ -13767,16 +13774,6 @@ File: scss
   padding: 0 30px;
   background: #fff;
 }
-.docs .topbar .top-navbar .navbar-header .navbar-brand > a {
-  text-decoration: none;
-}
-.docs .topbar .top-navbar .navbar-header .nav-toggler {
-  text-decoration: none;
-}
-.docs tbody td a {
-  text-decoration: none;
-}
-
 @media (min-width: 160px) {
   .docs .topbar .top-navbar .navbar-header {
     border: 1px solid #e9ecef;

@@ -61,10 +61,10 @@ $(function() {
     $(".page-wrapper").delay(20).show();
 
     $('#sidebarnav a').on('click', function() {
-        $('html, body').animate({
-            scrollTop: $($(this).attr('href')).offset().top - 85
-        }, 500);
-        return false;
+        // $('html, body').animate({
+        //     scrollTop: $($(this).attr('href')).offset().top - 85
+        // }, 500);
+        // return false;
     });
     var lastId, topMenu = $("#sidebarnav"),
         topMenuHeight = topMenu.outerHeight(),
@@ -84,7 +84,7 @@ $(function() {
         var id = cur && cur.length ? cur[0].id : "";
         if (lastId !== id) {
             lastId = id;
-            menuItems.removeClass("active").filter("[href='#" + id + "']").addClass("active");
+            // menuItems.removeClass("active").filter("[href='#" + id + "']").addClass("active");
         }
     });
 

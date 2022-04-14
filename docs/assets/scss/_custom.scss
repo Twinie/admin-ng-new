@@ -2,6 +2,9 @@
 
 // 11th April 2022 - Updation by Twinkle
 .docs {
+  a{
+    text-decoration: none;
+  }
   &#main-wrapper[data-layout=vertical]{
     .left-sidebar[data-sidebarbg=skin6]{
       box-shadow: none;
@@ -25,13 +28,28 @@
         ul{
           .sidebar-item{
             width: 210px;
-            &.active{
+            &.selected{
               opacity: 1;
-              background: black;
-              border-radius: 6px;
-           
-              .hide-menu {
-                  color: white;
+              > .sidebar-link{ 
+                &.active:not(.has-arrow) {
+                  background: black;
+                  border-radius: 6px;
+                  .hide-menu {
+                      color: white;
+                  }
+                }
+              }
+
+              .first-level {
+                .sidebar-link{ 
+                  &.active {
+                    background: black;
+                    border-radius: 6px;
+                    .hide-menu {
+                        color: white;
+                    }
+                  }
+                }
               }
             }
             .sidebar-link{
@@ -42,19 +60,18 @@
               font-size: 15px;
               font-weight: 400;
               opacity: 0.9;
-              &.active{
-                opacity: 1;
-                background: black;
-                border-radius: 6px;
-                .hide-menu {
-                    color: white;
-                }
-              }
             }
           }
         }
       }  
     }
+    .footer{
+      font-size: 16px;
+      color: #607d8b;
+      background: #fff;
+      border-top: 1px solid #e9ecef;
+      padding: 17px 15px
+     }
   }
   
 	.page-wrapper {
@@ -86,7 +103,7 @@
      ul{
        li{
          a{
-          text-decoration: none !important;
+          // text-decoration: none !important;
           }
          }
         }  
@@ -101,12 +118,12 @@
          .navbar-brand{
            padding: 0 30px;
            &>a{
-            text-decoration: none;
+            // text-decoration: none;
            }
           background: #fff;
         }
         .nav-toggler{
-          text-decoration: none;
+          // text-decoration: none;
         }
       }
     }
@@ -114,7 +131,7 @@
  tbody{
    td{
      a{
-       text-decoration: none;
+      //  text-decoration: none;
      }
    }
  }
