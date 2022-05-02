@@ -19,9 +19,10 @@ File: scss
     overflow:hidden;
 }
 
-.container-fluid {
-    padding: 25px 15px 0 15px;
-}
+// .container-fluid {
+//     padding: 25px 15px 0 15px;  //removed padding from container fluid as it was giving white space on the left and right side
+// }
+
 
 .display-7 {
     font-size: 30px;
@@ -45,7 +46,7 @@ File: scss
 }
 
 .banner-text {
-    padding: 10px 0 0 0;
+    padding: 35px 0 0 0;
     min-height:500px;
     h1 {
         font-size: 30px;

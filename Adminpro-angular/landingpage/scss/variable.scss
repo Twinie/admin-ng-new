@@ -32,12 +32,7 @@ $themecolor: #398bf7;
 $themecolor-alt: #26c6da;
 $themecolor-dark: #028ee1;
 
-
-
-
-
 /*bootstrap Color*/
-
 $danger: #ef5350;
 $success: #06d79c;
 $warning: #ffb22b;
@@ -54,12 +49,7 @@ $bglight:rgba(0,
 0,
 0.02);
 
-
-
-
-
 /*Light colors*/
-
 $light-danger: #f9e7eb;
 $light-success: #e8fdeb;
 $light-warning: #fff8ec;
@@ -67,8 +57,6 @@ $light-primary: #f1effd;
 $light-info: #cfecfe;
 $light-inverse: #f6f6f6;
 $light-megna: #e0f2f4;
-
-
 
 $danger-dark: #e6294b;
 $success-dark: #04b381;
@@ -82,10 +70,7 @@ $dark-transparent:rgba(0,
 0,
 0.05);
 
-
-
-
-
+// $grid-gutter-width: 30px !default;a
 
 /*Normal Color*/
 
@@ -96,12 +81,7 @@ $purple: #7460ee;
 $blue: #02bec9;
 $megna: #56c0d8;
 
-
-
-
-
 /*Extra Variable*/
-
 $rgt: right;
 $lft: left;
 $border: rgba(120,
@@ -113,9 +93,6 @@ $card-brd:#d7dfe3;
 $dark-text: #848a96;
 $radius: 4px;
 $form-brd: #b1b8bb;
-
-
-
 
 /*Preloader*/
 
@@ -131,11 +108,4 @@ $form-brd: #b1b8bb;
         top: calc(50% - 3.5px);
         left: calc(50% - 3.5px);
     }
-}
-
-.btn{
-    color: white;
-}
-a{
-    text-decoration: none;
 }

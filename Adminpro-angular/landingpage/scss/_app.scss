@@ -1317,7 +1317,7 @@ textarea{
 .fix-width{
     width:100%;
     max-width: 1600px; 
-    padding: 0 30px;
+    padding:0 30px;
     margin:0 auto;
 }
 ul.common li{
@@ -1325,4 +1325,15 @@ ul.common li{
     line-height: 40px;
     list-style: outside none none;
     width: 48%;
+}
+
+// 28-04-2022 added style - as the bootstrap version is updated!
+a{
+    text-decoration: none;
+}
+.btn{
+    color: white;
+    &:hover{
+        color: white;
+    }
 }
